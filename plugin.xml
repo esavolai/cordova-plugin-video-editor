@@ -29,7 +29,7 @@
 
 		
         <!-- add plugin class -->
-        <source-file src="src/android/VideoEditor2.java" target-dir="src/org/apache/cordova/videoeditor2" />
+        <source-file src="src/android/VideoEditor.java" target-dir="src/org/apache/cordova/videoeditor2" />
 
         <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
 		
