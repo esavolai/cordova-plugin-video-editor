@@ -23,7 +23,7 @@
     <platform name="android">
         <config-file target="config.xml" parent="/*">
             <feature name="VideoEditor2">
-                <param name="android-package" value="org.apache.cordova.videoeditor2.VideoEditor" />
+                <param name="android-package" value="org.apache.cordova.videoeditor2.VideoEditor2" />
             </feature>
         </config-file>
 
