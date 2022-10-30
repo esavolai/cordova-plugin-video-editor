@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-video-editor" version="1.1.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>VideoEditor</name>
+<plugin id="cordova-plugin-video-editor2" version="1.1.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>VideoEditor2</name>
     <description>A plugin to assist in video editing tasks</description>
     <keywords>cordova,video,editing,transcoding,encoding</keywords>
     <repo>https://github.com/jbavari/cordova-plugin-video-editor.git</repo>
     <license>MIT for iOS, GPL for Android, Apache 2.0 for Windows</license>
 
 
-    <js-module name="VideoEditor" src="www/VideoEditor.js">
-        <clobbers target="VideoEditor" />
+    <js-module name="VideoEditor2" src="www/VideoEditor.js">
+        <clobbers target="VideoEditor2" />
     </js-module>
 
-    <js-module name="VideoEditorOptions" src="www/VideoEditorOptions.js">
-        <clobbers target="VideoEditorOptions" />
+    <js-module name="VideoEditorOptions2" src="www/VideoEditorOptions.js">
+        <clobbers target="VideoEditorOptions2" />
     </js-module>
 
     <engines>
@@ -22,14 +22,14 @@
     <!-- android -->
     <platform name="android">
         <config-file target="config.xml" parent="/*">
-            <feature name="VideoEditor">
-                <param name="android-package" value="org.apache.cordova.videoeditor.VideoEditor" />
+            <feature name="VideoEditor2">
+                <param name="android-package" value="org.apache.cordova.videoeditor2.VideoEditor" />
             </feature>
         </config-file>
 
 		
         <!-- add plugin class -->
-        <source-file src="src/android/VideoEditor.java" target-dir="src/org/apache/cordova/videoeditor" />
+        <source-file src="src/android/VideoEditor2.java" target-dir="src/org/apache/cordova/videoeditor2" />
 
         <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
 		
@@ -38,8 +38,8 @@
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="VideoEditor">
-                <param name="ios-package" value="VideoEditor"/>
+            <feature name="VideoEditor2">
+                <param name="ios-package" value="VideoEditor2"/>
             </feature>
         </config-file>
 

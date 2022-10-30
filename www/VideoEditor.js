@@ -6,11 +6,11 @@
 //
 
 var exec = require('cordova/exec');
-var pluginName = 'VideoEditor';
+var pluginName = 'VideoEditor2';
 
-function VideoEditor() {}
+function VideoEditor2() {}
 
-VideoEditor.prototype.transcodeVideo = function(success, error, options) {
+VideoEditor2.prototype.transcodeVideo = function(success, error, options) {
   var self = this;
   var win = function(result) {
     if (typeof result.progress !== 'undefined') {
@@ -24,7 +24,7 @@ VideoEditor.prototype.transcodeVideo = function(success, error, options) {
   exec(win, error, pluginName, 'transcodeVideo', [options]);
 };
 
-VideoEditor.prototype.trim = function(success, error, options) {
+VideoEditor2.prototype.trim = function(success, error, options) {
 	var self = this;
 	var win = function(result) {
 	  if (typeof result.progress !== 'undefined') {
@@ -38,13 +38,13 @@ VideoEditor.prototype.trim = function(success, error, options) {
 	exec(win, error, pluginName, 'trim', [options]);
 };
 
-VideoEditor.prototype.createThumbnail = function(success, error, options) {
+VideoEditor2.prototype.createThumbnail = function(success, error, options) {
   exec(success, error, pluginName, 'createThumbnail', [options]);
 };
 
-VideoEditor.prototype.getVideoInfo = function(success, error, options) {
+VideoEditor2.prototype.getVideoInfo = function(success, error, options) {
   exec(success, error, pluginName, 'getVideoInfo', [options]);
 };
 
 
-module.exports = new VideoEditor();
+module.exports = new VideoEditor2();

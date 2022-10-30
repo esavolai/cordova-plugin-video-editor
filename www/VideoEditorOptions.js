@@ -5,7 +5,7 @@
 //  Modified by Ross Martin on 01-29-15
 //
 
-var VideoEditorOptions = {
+var VideoEditorOptions2 = {
     OptimizeForNetworkUse: {
         NO: 0,
         YES: 1
@@ -18,4 +18,4 @@ var VideoEditorOptions = {
     }
 };
 
-module.exports = VideoEditorOptions;
+module.exports = VideoEditorOptions2;
