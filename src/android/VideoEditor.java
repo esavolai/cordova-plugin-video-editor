@@ -1,4 +1,4 @@
-package org.apache.cordova.videoeditor;
+package org.apache.cordova.videoeditor2;
 
 import java.io.*;
 import java.net.URL;
@@ -52,9 +52,9 @@ import java.util.List;
  * VideoEditor plugin for Android
  * Created by Ross Martin 2-2-15
  */
-public class VideoEditor extends CordovaPlugin {
+public class VideoEditor2 extends CordovaPlugin {
 
-    private static final String TAG = "VideoEditor";
+    private static final String TAG = "VideoEditor2";
 
     private CallbackContext callback;
 

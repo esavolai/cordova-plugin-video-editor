@@ -1,7 +1,7 @@
 ﻿/**
  * Enumerations for transcoding
  */
-declare module VideoEditorOptions {
+declare module VideoEditorOptions2 {
     //output quailty
     enum Quality {
         HIGH_QUALITY,
@@ -31,11 +31,11 @@ declare interface VideoEditorTranscodeProperties {
         /** A string that indicates what type of field this is, home for example. */
         outputFileName: string,
         /** The quality of the result. */
-        quality: VideoEditorOptions.Quality,
+        quality: VideoEditorOptions2.Quality,
         /** Instructions on how to encode the video. */
-        outputFileType: VideoEditorOptions.OutputFileType,
+        outputFileType: VideoEditorOptions2.OutputFileType,
         /** Should the video be processed with quailty or speed in mind */
-        optimizeForNetworkUse: VideoEditorOptions.OptimizeForNetworkUse,
+        optimizeForNetworkUse: VideoEditorOptions2.OptimizeForNetworkUse,
         /** Not supported in windows, the duration in seconds from the start of the video*/
         duration?: number,
         /** Not supported in windows, save into the device library*/
@@ -117,7 +117,7 @@ declare interface VideoEditorVideoInfoDetails {
 /**
  * The VideoEditor object represents a tool for editing videos. Videos can only be trimmed, so far.
  */
-interface VideoEditor {
+interface VideoEditor2 {
     /**
     * The VideoEditor.transcode method executes asynchronously, encoding a video at a location
     * and returning the full path. Options can be set to change how the video is encoded. The resulting string 
@@ -166,4 +166,4 @@ interface VideoEditor {
         options: VideoEditorVideoInfoOptions): void;
 }
 
-declare var VideoEditor: VideoEditor;
+declare var VideoEditor2: VideoEditor2;
